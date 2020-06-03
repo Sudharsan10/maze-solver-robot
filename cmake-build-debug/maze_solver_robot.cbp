@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="maze_solver_robot"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="maze_solver_robot">
+				<Option output="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/maze_solver_robot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 maze_solver_robot"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="maze_solver_robot/fast">
+				<Option output="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/maze_solver_robot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 maze_solver_robot/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/README.md">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/main.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/API/api.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/API/api.h">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/Algorithm/algorithm.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/Algorithm/algorithm.h">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/LandBasedRobot/landbasedrobot.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/LandBasedRobot/landbasedrobot.h">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/LandBasedTracked/landbasedtracked.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/LandBasedTracked/landbasedtracked.h">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/LandBasedWheeled/landbasedwheeled.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/LandBasedWheeled/landbasedwheeled.h">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/Maze/maze.cpp">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/src/Maze/maze.h">
+			<Option target="maze_solver_robot"/>
+		</Unit>
+		<Unit filename="/home/codezen/Working-Directory/FinalProject/maze-solver-robot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
