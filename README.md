@@ -131,11 +131,14 @@ maze-solver-robot/
 
 Enter the initial state of the puzzle and goal state of the puzzle as shown in the fig below.
 
+<img src=".\img\add-mouse.png" width="100%" />
+<img src=".\img\step-one.png" width="100%" />
 
 ### 2 Class Structure<a id='class-structure'></a>
 <img src=".\img\class-structure.png" width="100%" />
 
 ### 3 Depth First Search<a id='depth-first-search'></a>
+<img src=".\img\dfs-gif.gif" width="100%" />
 <img src=".\img\dfs.png" width="100%" />
 
 ### 4 Node Object Data Structure<a id='node-data-structure'></a>
