@@ -1,4 +1,4 @@
-/snap/clion/112/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/codezen/Working-Directory/FinalProject/maze-solver-robot
+/snap/clion/114/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/codezen/Working-Directory/FinalProject/maze-solver-robot
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/codezen/Working-Directory/FinalProject/maze-solver-robot/cmake-build-debug

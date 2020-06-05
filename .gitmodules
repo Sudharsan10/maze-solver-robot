@@ -1,0 +1,6 @@
+[submodule "mms"]
+	path = mms
+	url = https://github.com/mackorone/mms.git
+[submodule "mazefiles"]
+	path = mazefiles
+	url = https://github.com/micromouseonline/mazefiles.git

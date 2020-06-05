@@ -25,22 +25,16 @@
 #include <memory>
 #include "src/Algorithm/algorithm.h"
 #include "src/API/api.h"
-#include "src/LandBasedWheeled/landbasedwheeled.h"
 #include "src/LandBasedTracked/landbasedtracked.h"
 
 
 int main() {
-//    std::cerr << "\n-----------------------------> Start <------------------------------\n";
-//    std::shared_ptr<fp::LandBasedRobot> wheeled = std::make_shared<fp::LandBasedWheeled>("Husky");
-//    fp::Algorithm algorithm;
-//    algorithm.Solve(wheeled);
-//    std::cerr << "\n----------------------------> The End <-----------------------------\n";
 
     std::cerr << "\n-----------------------------> Start <------------------------------\n";
     std::shared_ptr<fp::LandBasedRobot> tracked = std::make_shared<fp::LandBasedTracked>("Husky");
     fp::Algorithm algorithm2;
-    algorithm2.Solve2(tracked);
-    algorithm2.BackTrack2(algorithm2.end_goal_, algorithm2.node_master_);
+    algorithm2.DFSAlgorithm(tracked);
+    algorithm2.BackTrack(algorithm2.end_goal_, algorithm2.node_master_);
 
     std::cerr << "\n Total Nodes Explored: " << algorithm2.visited_Count << std::endl;
     std::cerr << "\n----------------------------> The End <-----------------------------\n";
