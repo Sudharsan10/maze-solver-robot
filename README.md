@@ -41,7 +41,7 @@ This app depends on ```Qt5``` libraries. We can setup this up using apt-get pack
 ## Quick start                                   
 - Clone the repo in terminal using following command: 
     > ```shell script
-    > git clone https://github.com/Sudharsan10/TilePuzzelSolver-App.git
+    > git clone https://github.com/Sudharsan10/maze-solver-robot.git
     > ```
     or download github repo as ```.zip``` and extract it in the desired location.
     

@@ -111,7 +111,6 @@ namespace fp {
          */
         void DFSAlgorithm(const std::shared_ptr<fp::LandBasedRobot> &robot);
 
-
         /**
          * @brief Navigate the robot through the backtracked path in the maze
          * @param back tracked path (std::stack<std::array<int, 2>>& path)

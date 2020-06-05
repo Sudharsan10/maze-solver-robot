@@ -211,8 +211,12 @@ void fp::Algorithm::Navigate(std::array<int, 2> &current, std::array<int, 2> &ne
     }
 }
 
+/**
+ * @brief finds the neighbouring nodes of a given input node
+ * @param std::array<int, 2> cur_node
+ * @return none
+ */
 void fp::Algorithm::FindNeighbours(std::array<int, 2> cur_node, char curr_dir) {
-
     char robotDirection{this->robot_->GetDirection()};
     bool N{this->maze_info.North_[cur_node[0]][cur_node[1]]},
             S{this->maze_info.South_[cur_node[0]][cur_node[1]]},
@@ -251,8 +255,14 @@ void fp::Algorithm::FindNeighbours(std::array<int, 2> cur_node, char curr_dir) {
     }
 }
 
-
-std::stack<std::array<int, 2>> fp::Algorithm::BackTrack(std::array<int, 2> current_node, std::array<std::array<Node2, 16>, 16> &node) {
+/**
+ * @brief Back track to the start node from a given node
+ * @param goal node
+ * @param node information of the maze
+ * @return Returns std::stack<std::array<int, 2>> the back tracked path to the start node from the goal
+ */
+std::stack<std::array<int, 2>>
+fp::Algorithm::BackTrack(std::array<int, 2> current_node, std::array<std::array<Node, 16>, 16> &node) {
     std::array<int, 2> parent_node = node[current_node[0]][current_node[1]].parent_node_;
     this->path_stack_.push(current_node);
     while (!(current_node == parent_node)) {
