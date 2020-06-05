@@ -102,7 +102,7 @@ namespace fp {
          * @param node information of the maze
          * @return Returns std::stack<std::array<int, 2>> the back tracked path to the start node from the goal
          */
-        BackTrack(std::array<int, 2> current_node, std::array<std::array<Node, 16>, 16> &node);
+        std::stack<std::array<int, 2>> BackTrack(std::array<int, 2> current_node, std::array<std::array<Node, 16>, 16> &node);
 
         /**
          * @brief Maze solver function

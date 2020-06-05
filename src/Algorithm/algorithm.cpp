@@ -252,8 +252,7 @@ void fp::Algorithm::FindNeighbours(std::array<int, 2> cur_node, char curr_dir) {
 }
 
 
-std::stack<std::array<int, 2>>
-fp::Algorithm::BackTrack(std::array<int, 2> current_node, std::array<std::array<Node2, 16>, 16> &node) {
+std::stack<std::array<int, 2>> fp::Algorithm::BackTrack(std::array<int, 2> current_node, std::array<std::array<Node2, 16>, 16> &node) {
     std::array<int, 2> parent_node = node[current_node[0]][current_node[1]].parent_node_;
     this->path_stack_.push(current_node);
     while (!(current_node == parent_node)) {
