@@ -36,28 +36,16 @@
 namespace fp {
     struct Node {
         //---> Attributes <---//
-        int dist_;
-        std::array<int, 2> parent_node_;
-
-        //---> Constructor 01: Default constructor <---//
-        Node() : dist_{}, parent_node_{} {}
-
-        //---> Destructors <---//
-        ~Node() = default;
-    };
-
-    struct Node2 {
-        //---> Attributes <---//
         int dist_{};
         bool N, S, E, W;
         std::array<int, 2> parent_node_{};
         std::stack<std::array<int, 2>> child_node_;
 
         //---> Constructor 01: Default constructor <---//
-        Node2() : dist_{}, parent_node_{}, child_node_{}, N{}, S{}, E{}, W{} {}
+        Node() : dist_{}, parent_node_{}, child_node_{}, N{}, S{}, E{}, W{} {}
 
         //---> Destructors <---//
-        ~Node2() = default;
+        ~Node() = default;
     };
 
 
@@ -75,7 +63,7 @@ namespace fp {
         std::shared_ptr<fp::LandBasedRobot> robot_;
         std::stack<std::array<int, 2>> path_stack_;
         std::array<std::array<Node, 16>, 16> node_info;
-        std::array<std::array<Node2, 16>, 16> node_master_;
+        std::array<std::array<Node, 16>, 16> node_master_;
         std::array<std::array<bool, 16>, 16> explored_node_;
         std::array<std::array<bool, 16>, 16> visited_node_;
         std::array<int, 2> goal1_, goal2_, goal3_, goal4_, end_goal_;
@@ -114,8 +102,7 @@ namespace fp {
          * @param node information of the maze
          * @return Returns std::stack<std::array<int, 2>> the back tracked path to the start node from the goal
          */
-        std::stack<std::array<int, 2>>
-        BackTrack(std::array<int, 2> current_node, std::array<std::array<Node2, 16>, 16> &node);
+        BackTrack(std::array<int, 2> current_node, std::array<std::array<Node, 16>, 16> &node);
 
         /**
          * @brief Maze solver function
