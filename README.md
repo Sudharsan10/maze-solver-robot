@@ -119,6 +119,8 @@ maze-solver-robot/
 ```
 
 ## Documentation
+For documentation related to the code you can refer the one provided under docs directory. 
+A general outline explanantion with the help of flowcharts and images are provided in the following subsections,
 ### Contents:
 1. [How to use](#howtouse)
 2. [Class Structure](#class-structure)
@@ -130,24 +132,44 @@ maze-solver-robot/
 ### 1 How to use <a id ='howtouse'></a>
 
 Enter the initial state of the puzzle and goal state of the puzzle as shown in the fig below.
-
+- Click on the + icon from the config section, you will get a window like this,
 <img src=".\img\add-mouse.png" width="100%" />
+- Enter all the fields in the respective locations,
 <img src=".\img\step-one.png" width="100%" />
+    - **Name:** Any name of user choice to store the config.
+    - **Directory:** The absolute path to the root directory of the project folder.
+    - **Build Command:** It takes compiler that 'g++', '-std = c++14' is the c++ standard we used, then relative path to all the necessary .cpp 
+    class files. If you haven't changed any of the files and project structure you can go ahead and copy paste the following command.
+        > ```
+        > g++ -std=c++14 main.cpp src/LandBasedRobot/landbasedrobot.cpp src/LandBasedWheeled/landbasedwheeled.cpp 
+        > src/API/api.cpp src/Algorithm/algorithm.cpp src/LandBasedTracked/landbasedtracked.cpp src/Maze/maze.cpp
+        > ```
+    - **Run Command:** ```./a.out``` use this command.
+- Then click, Build button and wait for it to turn green. If the previous step clears out then it will turn green indicating 
+that we can run the simulator.
+- To run click the Run and you will see the simulation of the robot exploring in the maze. 
 
 ### 2 Class Structure<a id='class-structure'></a>
+The following figure explains the class structure for all the classes in the src directory
 <img src=".\img\class-structure.png" width="100%" />
 
-### 3 Depth First Search<a id='depth-first-search'></a>
-<img src=".\img\dfs-gif.gif" width="100%" />
+### 3 Depth First Search & Ideal Implementation<a id='depth-first-search'></a>
+- Depth first search:
+<img src=".\img\dfs-gif1.gif" width="100%" />
+- General Implementation of DFS algorithm flowchart
 <img src=".\img\dfs.png" width="100%" />
+- Incorporating the DFS algorithm to solve the maze Flowchart
+<img src=".\img\solver-implementation.png" width="100%" />
 
 ### 4 Node Object Data Structure<a id='node-data-structure'></a>
+Since the above mentioned DFS algorithm and Solver has lot of redundancy loops like exploring or visiting same trail of 
+path frequently. This is definitely a optimization issue, which has been resolved with the help of our own custom Node data 
+structure and custom dfs and solver implementation algorithm.
 <img src=".\img\node-data-structure.png" width="100%" />
+- **Custom Implementation:**
+<img src=".\img\custom-algorithm.png" width="100%" />
 
-### 5 Implementation<a id='implementation'></a>
-<img src=".\img\implementation.png" width="100%" />
-
-### 6 Project Execution<a id='project-execution'></a>
+### 5 Project Execution<a id='project-execution'></a>
 <img src=".\img\project-execution.png" width="100%" />
 
 
