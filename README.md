@@ -34,43 +34,42 @@ The concepts of object-oriented programming, inheritance, and dynamic polymorphi
 This app depends on ```Qt5``` libraries. We can setup this up using apt-get package manager (for Debian linux) or conda virtual environment tool.
 
 - setting up using pip installer
-    > ```shell script
+    > ```
     > sudo apt-get install qt5-default
     >```
     
 ## Quick start                                   
 - Clone the repo in terminal using following command: 
-    > ```shell script
+    > ```
     > git clone https://github.com/Sudharsan10/maze-solver-robot.git
     > ```
+    
     or download github repo as ```.zip``` and extract it in the desired location.
     
 - If you would like to use latest micro-mouse simulator and maze files then do the following,   
-    > ```shell script
-    > cd mms
+    > ```
+    > git clone https://github.com/mackorone/mms.git
     >```
-    > ```shell script
-    > git pull https://github.com/mackorone/mms.git
+    
+    > ```
+    > git clone git https://github.com/micromouseonline/mazefiles.git
     >```
-    > ```shell script
-    > cd .. && cd mazefiles
-    >```
-    > ```shell script
-    > git pull git https://github.com/micromouseonline/mazefiles.git
-    >```
+    
     Note: To install and setup anaconda environment follow this [link](#https://docs.anaconda.com/anaconda/install/) first 
     and visit this section again after successfully setting up the conda environment.
 
 ## Run instructions
 To run the app, first finish the pre-requisites mentioned above, then
 - Navigate to the root directory of the cloned repo and start the Micro-Mouse Simulator(mms) using the following command:
-    > ```shell script
+    > ```
     > cd mms/src
     > ```
-    > ```shell script
+    
+    > ```
     > qmake && make
     > ``` 
-    > ```shell script
+    
+    > ```
     > ../../mms/bin/mms
     > ```
     The last command will fire up the micro-mouse simulator.
@@ -135,16 +134,19 @@ Enter the initial state of the puzzle and goal state of the puzzle as shown in t
 - Click on the + icon from the config section, you will get a window like this,
 <img src=".\img\add-mouse.png" width="100%" />
 - Enter all the fields in the respective locations,
-    - **Name:** Any name of user choice to store the config.
-    - **Directory:** The absolute path to the root directory of the project folder.
-    - **Build Command:** It takes compiler that 'g++', '-std = c++14' is the c++ standard we used, then relative path to all the necessary .cpp 
+    <ul> 
+    <li>- <strong>Name:</strong> Any name of user choice to store the config.</li>
+    <li>- <strong>Directory:</strong> The absolute path to the root directory of the project folder.</li>
+    <li>- <strong>Build Command:</strong> It takes compiler that 'g++', '-std = c++14' is the c++ standard we used, then relative path to all the necessary .cpp 
     class files. If you haven't changed any of the files and project structure you can go ahead and copy paste the following command.
         > ```
         > g++ -std=c++14 main.cpp src/LandBasedRobot/landbasedrobot.cpp src/LandBasedWheeled/landbasedwheeled.cpp 
         > src/API/api.cpp src/Algorithm/algorithm.cpp src/LandBasedTracked/landbasedtracked.cpp src/Maze/maze.cpp
         > ```
-    - **Run Command:** ```./a.out``` use this command.
-<img src=".\img\step-one.png" width="100%" />
+    </li>
+    <li>- <strong>Run Command:</strong> ```./a.out``` use this command.</li>
+    <img src=".\img\step-one.png" width="100%" />
+    </ul>
 - Then click, Build button and wait for it to turn green. If the previous step clears out then it will turn green indicating 
 that we can run the simulator.
 - To run click the Run and you will see the simulation of the robot exploring in the maze. 
