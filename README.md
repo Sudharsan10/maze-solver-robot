@@ -133,18 +133,18 @@ A general outline explanantion with the help of flowcharts and images are provid
 Enter the initial state of the puzzle and goal state of the puzzle as shown in the fig below.
 - Click on the + icon from the config section, you will get a window like this,
 <img src=".\img\add-mouse.png" width="100%" />
-- Enter all the fields in the respective locations,
-    
-    - <strong>Name:</strong> Any name of user choice to store the config.
-    - <strong>Directory:</strong> The absolute path to the root directory of the project folder.
-    - <strong>Build Command:</strong> It takes compiler that 'g++', '-std = c++14' is the c++ standard we used, then relative path to all the necessary .cpp 
+- Enter all the fields in the respective locations,    
+    - **Name:** Any name of user choice to store the config.
+    - **Directory:** The absolute path to the root directory of the project folder.
+    - **Build Command:** It takes compiler that 'g++', '-std = c++14' is the c++ standard we used, then relative path to all the necessary .cpp 
     class files. If you haven't changed any of the files and project structure you can go ahead and copy paste the following command.
+    
         > ```
         > g++ -std=c++14 main.cpp src/LandBasedRobot/landbasedrobot.cpp src/LandBasedWheeled/landbasedwheeled.cpp 
         > src/API/api.cpp src/Algorithm/algorithm.cpp src/LandBasedTracked/landbasedtracked.cpp src/Maze/maze.cpp
         > ```
    
-    - <strong>Run Command:</strong> ```./a.out``` use this command.
+    - **Run Command:** ```./a.out``` use this command.
     <img src=".\img\step-one.png" width="100%" />
 - Then click, Build button and wait for it to turn green. If the previous step clears out then it will turn green indicating 
 that we can run the simulator.
