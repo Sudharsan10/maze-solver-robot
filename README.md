@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://iamsudharsan.com/maze-solver-robot/">
-    <img src=".\img\maze-solver-robot-logo.png" alt="Social-header">
+    <img src=".\img\card.png" alt="Social-header">
   </a>  
 </p>
 
